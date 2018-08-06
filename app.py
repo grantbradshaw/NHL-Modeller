@@ -1,5 +1,5 @@
 from flask import Flask
-from flask.ext.sqlalchemy import SQLAlchemy
+# from flask.ext.sqlalchemy import SQLAlchemy
 # from models.result import Result
 # import environment
 import os
