@@ -1,14 +1,17 @@
 from app import db
 
-class Player(db.Model):
-    __tablename__ = 'players'
+class Team(db.Model):
+    __tablename__ = 'teams'
 
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String())
-    contracts = db.relationship('Contract', backref='player', lazy=True)
+    code = db.Column(db.String(3))
+    contracts = db.relationship('Contract', backref='team', lazy=True)
 
-    def __init__(self, name, contracts):
+
+    def __init__(self, name, code, contracts):
         self.name = name
+        self.code = code
         self.contracts = contracts
 
     def __repr__(self):

@@ -8,6 +8,8 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 from models.player import Player
+from models.team import Team
+from models.contract import Contract
 
 @app.route('/')
 def hello():
