@@ -1,6 +1,3 @@
-# allow import from parennt folder
-# sys.path.append(os.path.abspath(os.path.dirname(__file__) + '/' + '..'))
-
 from app import db
 # from sqlalchemy.dialects.postgresql import JSON
 
