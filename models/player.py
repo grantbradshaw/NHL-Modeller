@@ -1,5 +1,4 @@
 from app import db
-# from sqlalchemy.dialects.postgresql import JSON
 
 class Player(db.Model):
     __tablename__ = 'players'
