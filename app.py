@@ -1,6 +1,10 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+from dotenv import load_dotenv
 import os
+
+# may break executability on Heroku, confirm
+load_dotenv()
 
 app = Flask(__name__)
 app.config.from_object(os.environ['APP_SETTINGS'])
