@@ -1,6 +1,7 @@
-from flask import Flask
+from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 from dotenv import load_dotenv
+import requests
 import os
 
 # may break executability on Heroku, confirm
@@ -15,9 +16,23 @@ from models.player import Player
 from models.team import Team
 from models.contract import Contract
 
-@app.route('/')
-def hello():
-    return 'Hello, World!'
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    errors = []
+    results = []
+    if request.method == "POST":
+        try:
+            url = request.form['url']
+            r = requests.get(url)
+            print(r.text)
+        except:
+            errors.append(
+                "Unable to get URL. Please make sure it's valid and try again."
+            )
+    if request.method == "GET":
+        for instance in db.session.query(Team).order_by(Team.id):
+            results.append(instance.name)
+        return render_template('index.html', errors=errors, results=results)
 
 @app.route('/<name>')
 def hello_name(name):
