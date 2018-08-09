@@ -58,31 +58,45 @@ def scrape_player_data(url):
 
     if response is not None:
         html = BeautifulSoup(response, 'html.parser')
+
+        # get player name
+        player_name = html.find('div', {'class': 'p10'}).find('div', {'class': 'ofh'}).find('h1', {'class': 'c'})
+        process_personal(player_name, url, 'name')
+
         # gets personal information at top of page
         for div in html.findAll('div', {'class': 'indx_b'}):
-            find_deepest(div)
+            find_deepest(div, url)
 
 # method to get deepest nested divs
-def find_deepest(beautiful_html):
-    # print(beautiful_html)
-    # print(len(beautiful_html.findAll('div')))
-
+def find_deepest(beautiful_html, url):
     if len(beautiful_html.findAll('div')):
         for div in beautiful_html.findChildren('div', recursive=False):
-            find_deepest(div)
+            find_deepest(div, url)
     else:
-        process_span(str(beautiful_html))
+        process_personal(beautiful_html, url)
 
 # specific method to read a line of player information from a cap friendly page
-def process_span(div):
-    data = re.findall(">[A-Za-z0-9',\(\):\ ]+<", div)
-    key = data[0].replace('>' , '').replace('<', '').replace(':', '').strip()
-    value = data[1].replace('>' , '').replace('<', '').replace(':', '').strip()
-    print(key)
-    print(value)
+def process_personal(html, url, key=None):
+    string = str(html)
+    data = re.findall(">[A-Za-z0-9',\(\):\ ]+<", string)
+    if key:
+        piece = data[0].replace('>' , '').replace('<', '').replace(':', '').strip().title()
+        add_to_output(key, piece, url)
+    else:
+        key = data[0].replace('>' , '').replace('<', '').replace(':', '').strip().title()
+        value = data[1].replace('>' , '').replace('<', '').replace(':', '').strip()
+        add_to_output(key, value, url)
+
+# simple method to add key value pair to output
+def add_to_output(key, value, url):
+    if url in output:
+        output[url][key] = value
+    else:
+        output[url] = {key: value}
 
 # get_contract_index_pages()
 scrape_player_data('https://www.capfriendly.com/players/connor-mcdavid')
+# print(output)
 
 
 
