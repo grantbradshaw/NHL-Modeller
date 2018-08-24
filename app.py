@@ -13,7 +13,14 @@ db = SQLAlchemy(app)
 
 from models.player import Player
 from models.team import Team
+from models.season import Season
+from models.draft_pick import DraftPick
 from models.contract import Contract
+from models.contract_season import ContractSeason
+from models.employment import Employment
+from models.game import Game
+from models.player_game import PlayerGame
+from models.team_game import TeamGame
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
