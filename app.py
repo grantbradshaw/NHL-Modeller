@@ -4,7 +4,6 @@ from dotenv import load_dotenv
 import requests
 import os
 
-# may break executability on Heroku, confirm
 load_dotenv()
 
 app = Flask(__name__)
@@ -20,15 +19,15 @@ from models.contract import Contract
 def index():
     errors = []
     results = []
-    if request.method == "POST":
-        try:
-            url = request.form['url']
-            r = requests.get(url)
-            print(r.text)
-        except:
-            errors.append(
-                "Unable to get URL. Please make sure it's valid and try again."
-            )
+    # if request.method == "POST":
+    #     try:
+    #         url = request.form['url']
+    #         r = requests.get(url)
+    #         print(r.text)
+    #     except:
+    #         errors.append(
+    #             "Unable to get URL. Please make sure it's valid and try again."
+    #         )
     if request.method == "GET":
         for instance in db.session.query(Team).order_by(Team.id):
             results.append(instance.name)

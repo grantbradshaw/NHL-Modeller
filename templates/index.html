@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="nhlApp">
   <head>
-    <title>Wordcount</title>
+    <title>NHL Teams</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <style>
@@ -10,14 +10,12 @@
       }
     </style>
   </head>
-  <body>
+  <body ng-controller="nhlController">
     <div class="container">
-      <h1>Wordcount 3000</h1>
-      <form role="form" method='POST' action='/'>
+      <form role="form" ng-submit="getTeams()">
         <div class="form-group">
-          <input type="text" name="url" class="form-control" id="url-box" placeholder="Enter URL..." style="max-width: 300px;" autofocus required>
+          <input type="checkbox" name="show_teams" class="form-control" id="url-box" placeholder="Enter URL...">
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <br>
       {% for error in errors %}
@@ -26,7 +24,7 @@
     </div>
     <div class="col-sm-5 col-sm-offset-1">
           {% if results %}
-            <h2>Frequencies</h2>
+            <h2>Teams</h2>
             <br>
             <div id="results">
               <table class="table table-striped" style="max-width: 300px;">
@@ -46,5 +44,6 @@
         </div>
     <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
   </body>
 </html>
