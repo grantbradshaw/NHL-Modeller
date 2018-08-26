@@ -1,0 +1,173 @@
+{
+  "AFM": {
+    "name": "Atlanta Flames"
+  },
+  "ANA": {
+    "name": "Anaheim Ducks"
+  },
+  "ARI": {
+    "name": "Arizona Coyotes"
+  },
+  "ATL": {
+    "name": "Atlanta Thrashers"
+  },
+  "BOS": {
+    "name": "Boston Bruins"
+  },
+  "BRK": {
+    "name": "Brooklyn Americans"
+  },
+  "BUF": {
+    "name": "Buffalo Sabres"
+  },
+  "CAR": {
+    "name": "Carolina Hurricanes"
+  },
+  "CGS": {
+    "name": "California Golden Seals"
+  },
+  "CGY": {
+    "name": "Calgary Flames"
+  },
+  "CHI": {
+    "name": "Chicago Blackhawks"
+  },
+  "CBJ": {
+    "name": "Columbus Blue Jackets"
+  },
+  "CLE": {
+    "name": "Sleveland Barons"
+  },
+  "CLR": {
+    "name": "Colorado Rockies"
+  },
+  "COL": {
+    "name": "Colorado Avalanche"
+  },
+  "DAL": {
+    "name": "Dallas Stars"
+  },
+  "DFL": {
+    "name": "Detroit Falcons"
+  },
+  "DCG": {
+    "name": "Detroit Cougars"
+  },
+  "DET": {
+    "name": "Detroit Red Wings"
+  },
+  "EDM": {
+    "name": "Edmonton Oilers"
+  },
+  "FLA": {
+    "name": "Florida Panthers"
+  },
+  "HAM": {
+    "name": "Hamilton Tigers"
+  },
+  "HFD": {
+    "name": "Hartford Whalers"
+  },
+  "KCS": {
+    "name": "Kansas City Scouts"
+  },
+  "LAK": {
+    "name": "Los Angeles Kings"
+  },
+  "MIN": {
+    "name": "Minnesota Wild"
+  },
+  "MMR": {
+    "name": "Montreal Maroons"
+  },
+  "MNS": {
+    "name": "Minnesota North Stars"
+  },
+  "MTL": {
+    "name": "Montreal Canadiens"
+  },
+  "MWN": {
+    "name": "Montreal Wanderers"
+  },
+  "NSH": {
+    "name": "Nashville Predators"
+  },
+  "NJD": {
+    "name": "New Jersey Devils"
+  },
+  "NYA": {
+    "name": "New York Americans"
+  },
+  "NYI": {
+    "name": "New York Islanders"
+  },
+  "NYR": {
+    "name": "New York Rangers"
+  },
+  "OAK": {
+    "name": "Oakland Seals"
+  },
+  "OTT": {
+    "name": "Ottawa Senators"
+  },
+  "PHI": {
+    "name": "Philadelphia Flyers"
+  },
+  "PHX": {
+    "name": "Phoenix Coyotes"
+  },
+  "PIR": {
+    "name": "Pittsburgh Pirates"
+  },
+  "PIT": {
+    "name": "Pittsburgh Penguins"
+  },
+  "QUA": {
+    "name": "Philadelphia Quakers"
+  },
+  "QUE": {
+    "name": "Quebec Nordiques"
+  },
+  "QBD": {
+    "name": "Quebec Bulldogs"
+  },
+  "SEN": {
+    "name": "Ottawa Senators (original)"
+  },
+  "SJS": {
+    "name": "San Jose Sharks"
+  },
+  "SLE": {
+    "name": "St. Louis Eagles"
+  },
+  "STL": {
+    "name": "St. Louis Blues"
+  },
+  "TAN": {
+    "name": "Toronto Arenas"
+  },
+  "TBL": {
+    "name": "Tampa Bay Lightning"
+  },
+  "TOR": {
+    "name": "Toronto Maple Leafs"
+  },
+  "TSP": {
+    "name": "Toronto St. Patricks"
+  },
+  "VAN": {
+    "name": "Vancouver Canucks"
+  },
+  "VGK": {
+    "name": "Vegas Golden Knights"
+  },
+  "WIN": {
+    "name": "Winnipeg Jets (original)"
+  },
+  "WPG": {
+    "name": "Winnipeg Jets"
+  },
+  "WSH": {
+    "name": "Washington Capitals"
+  }
+}
