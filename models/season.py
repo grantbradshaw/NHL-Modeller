@@ -7,13 +7,13 @@ class Season(db.Model):
     start_date = db.Column(db.Date)
     start_playoffs = db.Column(db.Date)
     end_playoffs = db.Column(db.Date)
-    cap_floor = db.Column(db.Float)
-    cap_ceiling = db.Column(db.Float)
+    cap_floor = db.Column(db.Float) # in USD
+    cap_ceiling = db.Column(db.Float) # in USD
     games = db.Column(db.Float)
     contract_seasons = db.relationship('ContractSeason', backref='seasons', lazy=True)
 
     def __init__(self, start_date, start_playoffs, end_playoffs, cap_floor,
-                 cap_ceiling, games, contracts, contract_seasons, draft_picks):
+                 cap_ceiling, games, contract_seasons):
         self.start_date = start_date
         self.start_playoffs = start_playoffs
         self.end_playoffs = end_playoffs
