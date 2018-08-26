@@ -9,15 +9,12 @@ with open('data/teams.json') as f:
 
 
 def load_teams():
-    added_teams = []
     for key in data:
         try:
             team = Team(code=key, name=data[key]['name'], contracts=[], employments=[], draft_picks=[], team_games=[])
             db.session.add(team)
             added_teams.append(team)
         except:
-            for added in added_teams:
-                db.session.delete(added)
             raise Exception('Could not enter team')
     db.session.commit()
 
