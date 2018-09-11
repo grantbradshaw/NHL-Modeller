@@ -35,3 +35,9 @@ Scheduling data from,
 
 Index of relevant information,
 - <a href="http://www.hockeyabstract.com/thoughts/completelistofhockeyanalyticsdataresources">http://www.hockeyabstract.com/thoughts/completelistofhockeyanalyticsdataresources</a>
+
+Shift data,
+- <a href="http://www.shiftchart.com/">http://www.shiftchart.com/</a>
+
+Shot data,
+- Method for retrieving Play by Play data from <a href="https://github.com/sfrechette/nhlplaybyplay2-node">Stéphane Fréchette</a>, data from <a href="https://www.nhl.com/">https://www.nhl.com/</a>
