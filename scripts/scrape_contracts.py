@@ -48,6 +48,8 @@ def get_contract_index_pages():
     with open('data/contracts.json', 'w') as fr:
         json.dump(output, fr)
 
+    return output
+
 def get_player_pages(url):
     response = simple_get(url)
 

@@ -32,3 +32,6 @@ Scheduling data from,
 - <a href="https://en.wikipedia.org/wiki/2008_Stanley_Cup_playoffs">https://en.wikipedia.org/wiki/2008_Stanley_Cup_playoffs</a>
 - <a href="https://en.wikipedia.org/wiki/2007_Stanley_Cup_playoffs">https://en.wikipedia.org/wiki/2007_Stanley_Cup_playoffs</a>
 - <a href="https://en.wikipedia.org/wiki/2006_Stanley_Cup_playoffs">https://en.wikipedia.org/wiki/2006_Stanley_Cup_playoffs</a>
+
+Index of relevant information,
+- <a href="http://www.hockeyabstract.com/thoughts/completelistofhockeyanalyticsdataresources">http://www.hockeyabstract.com/thoughts/completelistofhockeyanalyticsdataresources</a>
